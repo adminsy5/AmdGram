@@ -141,7 +141,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
-    private Boolean isLoading(Boolean isLoading) {
+    private void isLoading(Boolean isLoading) {
         if (isLoading) {
             binding.btnSignUp.setVisibility(View.INVISIBLE);
             binding.progressBar.setVisibility(View.VISIBLE);
@@ -151,6 +151,5 @@ public class SignUpActivity extends AppCompatActivity {
             binding.btnSignUp.setVisibility(View.VISIBLE);
             binding.progressBar.setVisibility(View.INVISIBLE);
         }
-         return isLoading;   //
     }
 }
