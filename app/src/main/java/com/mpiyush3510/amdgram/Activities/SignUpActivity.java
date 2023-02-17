@@ -16,7 +16,6 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.mpiyush3510.amdgram.MainActivity;
 import com.mpiyush3510.amdgram.Utilities.Constants;
 import com.mpiyush3510.amdgram.Utilities.PreferenceManager;
 import com.mpiyush3510.amdgram.databinding.ActivitySignUpBinding;

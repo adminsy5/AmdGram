@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.mpiyush3510.amdgram.MainActivity;
 import com.mpiyush3510.amdgram.Utilities.Constants;
 import com.mpiyush3510.amdgram.Utilities.PreferenceManager;
 import com.mpiyush3510.amdgram.databinding.ActivitySignInBinding;
@@ -25,11 +24,11 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivitySignInBinding.inflate(getLayoutInflater());
         preferenceManager=new PreferenceManager(getApplicationContext());
-//        if(preferenceManager.getBoolean(Constants.KEY_IS_SIGNED_IN)){
-//            Intent intent=new Intent(getApplicationContext(), MainActivity.class);
-//            startActivity(intent);
-//            finish();
-//        }
+        if(preferenceManager.getBoolean(Constants.KEY_IS_SIGNED_IN)){
+            Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
         setContentView(binding.getRoot());
         setListeners();
     }
