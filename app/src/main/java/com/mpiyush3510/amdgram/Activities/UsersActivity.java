@@ -78,8 +78,8 @@ public class UsersActivity extends AppCompatActivity {
 
     private void isLoading(Boolean isLoading){
         if(isLoading)
-            binding.progressBar.setVisibility(View.INVISIBLE);
-        else
             binding.progressBar.setVisibility(View.VISIBLE);
+        else
+            binding.progressBar.setVisibility(View.INVISIBLE);
     }
 }
